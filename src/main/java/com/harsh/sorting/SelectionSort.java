@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 public class SelectionSort {
 
-	public static void main1(String[] args) {
-		Integer a[] = new Integer[] { 22, 13, 7, 55, -22, 1, 8 };
+	public static void main(String[] args) {
+//		Integer a[] = new Integer[] { 22, 13, 7, 55, -22, 1, 8 };
+		Integer a[] = new Integer[] {20, 35, -15, 7, 55, 1, -22};
 
 		int iterations = 0;
 
@@ -28,8 +29,9 @@ public class SelectionSort {
 		System.out.println(Arrays.toString(a));
 	}
 	
-	public static void main(String[] args) {
-		Integer a[] = new Integer[] { 22, 13, 7, 55, -22, 1, 8 };
+	public static void main1(String[] args) {
+//		Integer a[] = new Integer[] { 22, 13, 7, 55, -22, 1, 8 };
+		Integer a[] = new Integer[] {20, 35, -15, 7, 55, 1, -22};
 
 		int iterations = 0;
 

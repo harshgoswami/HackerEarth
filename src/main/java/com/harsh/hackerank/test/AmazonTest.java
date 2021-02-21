@@ -39,9 +39,9 @@ class Result {
 			String[] transaction = log.split(" ");
 			String user1 = transaction[0];
 			String user2 = transaction[1];
-			if (transactionCountMap.get(key)) {
-				
-			}
+//			if (transactionCountMap.get(key)) {
+//				
+//			}
 			for (int j = 0; j < transaction.length - 1; j++) {
 				String user = transaction[j];
 
