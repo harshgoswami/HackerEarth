@@ -6,12 +6,14 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 //		Integer a[] = new Integer[] { 22, 13, 7, 55, -22, 1, 8 };
-		Integer a[] = new Integer[] {20, 35, -15, 7, 55, 1, -22};
+		Integer a[] = new Integer[] {-1, 20, 35, -15, 7, 55, 1, -22, 2};
 
 		int iterations = 0;
 
 		for (int lastUnsortedIndex = a.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--, iterations++) {
 
+			// Diff
+//			Considering Largest Index as the first index of unsorted array
 			int largestIndex = 0;
 			for (int j = 1; j <= lastUnsortedIndex; j++, iterations++) {
 
