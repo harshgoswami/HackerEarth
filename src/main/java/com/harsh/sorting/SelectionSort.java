@@ -6,7 +6,7 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 //		Integer a[] = new Integer[] { 22, 13, 7, 55, -22, 1, 8 };
-		Integer a[] = new Integer[] {-1, 20, 35, -15, 7, 55, 1, -22, 2};
+		Integer a[] = new Integer[] {-1, 20, 35, -15, 7, 55, 1, -22, 2, 8, 121};
 
 		int iterations = 0;
 
@@ -56,4 +56,30 @@ public class SelectionSort {
 		System.out.println(Arrays.toString(a));
 	}
 
+	// Not sure which sorting algo I have implemented. It has same fnCalls as
+	// selection sort
+	public static void main3(String[] args) {
+
+//		Integer a[] = new Integer[] {22, 13, 7, 55, -22, 1, 8};
+		Integer a[] = new Integer[] {20, 35, -15, 7, 55, 1, -22, 22, 13, 7, 55};
+		
+		int iterations = 0;
+		
+		for (int i = 1; i < a.length; i++, iterations++) {
+			
+			for (int j = i; j > 0; j--, iterations++) {
+				
+				if (a[j] > a[j - 1]) {
+					int temp = a[j];
+					a[j] = a[j - 1];
+					a[j - 1] = temp;
+				}
+			}
+			
+		}
+		
+		System.out.println(iterations);
+		System.out.println(Arrays.toString(a));
+	}
+	
 }
